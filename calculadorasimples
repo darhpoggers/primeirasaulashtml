@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora simples</title>
+<style>
+
+    body{
+        margin: 0;
+    }
+
+    header{
+margin: auto;
+        background-color: blueviolet;
+    padding: 50px;
+    }
+
+header h1{
+    color: gold;
+    text-align: center;
+}
+
+.container{
+border: 1px solid #9113bf;
+border-radius: 25px;
+margin: 30px;
+padding: 5px;
+}
+
+input{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 98%;
+    padding: 8px;
+}
+
+input:hover{
+background-color: #f5b71b;
+}
+
+button{
+margin: 5px;
+width: 98%;
+
+}
+
+</style>
+</head>
+
+    <>
+        
+<header>
+<h1>Calculadora Simples :D</h1>
+</header>
+
+<div class="container">
+<input type="number" id="x" placeholder="Valor de X">
+<input type="number" id="y" placeholder="Valor de Y">
+<input type="number" id="z" placeholder="Resultado" readonly>
+<button type="button" onclick="somar()">+</button>
+<button type="button" onclick="dividir()">/</button>
+<button type="button" onclick="multiplicar()">*</button>
+<button type="button" onclick="subtrair()">-</button>
+</div>
+<img src= https://i.ytimg.com/vi/nJLCo5rBDCY/maxresdefault.jpg>
+
+<script>
+const somar = function(){
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseFloat(x) + parseFloat(y)
+document.getElementById('z').value = z
+console.log(z)
+
+const dividir = function(){
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseFloat(x) / parseFloat(y)
+document.getElementById('z').value = z
+console.log(z)
+}
+
+const multiplicar = function(){
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseFloat(x) * parseFloat(y)
+document.getElementById('z').value = z
+console.log(z)
+
+const subtrair = function(){
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseFloat(x) - parseFloat(y)
+document.getElementById('z').value = z
+console.log(z)
+}
